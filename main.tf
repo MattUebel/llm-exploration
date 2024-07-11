@@ -9,7 +9,7 @@ variable "sku_name" {
 }
 
 resource "azurerm_resource_group" "openai_rg" {
-  name     = "openai-resource-group"
+  name     = "llm-exploration-rg"
   location = var.location
 }
 
