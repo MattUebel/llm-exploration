@@ -14,7 +14,7 @@ resource "azurerm_resource_group" "openai_rg" {
 }
 
 resource "azurerm_cognitive_account" "openai" {
-  name                = "my-openai-account"
+  name                = "terraform-testing-openai"
   location            = azurerm_resource_group.openai_rg.location
   resource_group_name = azurerm_resource_group.openai_rg.name
   kind                = "OpenAI"
